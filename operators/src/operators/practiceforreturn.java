@@ -37,7 +37,7 @@ public class practiceforreturn {
 		int fact = 1;
 		for(int i = 1; i <= num; i++) {
 			fact = fact*i;
-			System.out.println(fact);
+			System.out.println(+fact);
 		}
 	}
 	
@@ -46,7 +46,7 @@ public class practiceforreturn {
 		odd(50,100);
 		even(2,50);
 		bool(true,false);
-		fac(5);
+		fac(2);
 		
 	}
 
