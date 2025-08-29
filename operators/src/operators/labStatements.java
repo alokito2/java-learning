@@ -1,7 +1,7 @@
 package operators;
 
 public class labStatements {
-	public static void main(String[] args) {
+   	public static void main(String[] args) {
 
 //1. Write a Java program that takes an integer input and prints whether 
 //it’s odd or even using an if expression statement inside the main method.

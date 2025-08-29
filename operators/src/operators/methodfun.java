@@ -30,7 +30,9 @@ public class methodfun {
 	}
 	
 	// argument int num is parameter
-	public static void table(int num) {
+	// i did not add static thats why i need to create an a object for the class to 
+	// access this methods
+	public void table(int num) {
 		for(int i = 1 ;i<= 10;i++) {
 			System.out.println(num + " x "+ i+"="+num*i);
 		}
@@ -41,14 +43,18 @@ public class methodfun {
 	}
 	
 	// using return
-	public static String hi(String name) {
+	public  String hi(String name) {
 		return "hello "+name;
 	}
 	
 	public static int add(int a, int b) {
 		return a+b;
 	}
+	
 	public static void main(String[] args) {
+		// creating objects
+		
+		methodfun meth = new methodfun();
 		oneToTen();
 		System.out.println();
 		naturalNo();
@@ -56,12 +62,14 @@ public class methodfun {
 		square();
 		
 		// 5 is argument
-		table(5);
-		table(6);
+		
+		meth.table(5);
+		meth.table(6);
 		// sachin is argument 
 		hello("sachin");
 		hello("patel");
-		System.out.println(hi("sac"));
+		System.out.println(meth.hi("sac"));// where i did not declare the the method as a static
+		// i need to add object name before it as you can see in the above program
 		System.out.println(add(5,4));
 		
 		
