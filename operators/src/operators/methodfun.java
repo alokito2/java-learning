@@ -50,6 +50,17 @@ public class methodfun {
 	public static int add(int a, int b) {
 		return a+b;
 	}
+	// varargs:
+	// rule 1: only 1 varargs allowed per method (int... num ,int... days)X
+	//2: varargs parameter always come last (int... num ,String name)X
+	public static int add(int... num) {
+		int total = 0;
+		for(int i : num) {
+			total += i;
+		}
+		return total;
+	}
+	
 	
 	public static void main(String[] args) {
 		// creating objects
@@ -70,7 +81,8 @@ public class methodfun {
 		hello("patel");
 		System.out.println(meth.hi("sac"));// where i did not declare the the method as a static
 		// i need to add object name before it as you can see in the above program
-		System.out.println(add(5,4));
+		System.out.println(add(5,4,5));// here calling varargs
+		System.out.println(add(5,7));
 		
 		
 		
