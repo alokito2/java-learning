@@ -32,19 +32,22 @@ public class Concat {
 		}
 	}
 	//
-//	public static int evenOd(int... num) {
-//		int even [] ;
-//		int odd ;
-//		for(int i :num) {
-//			if( i % 2 == 0) {
-//				even = i ;
-//				 return even  ;
-//			}else {
-//				odd = i;
-//				return odd;
-//			}
-//		}
-//		return num[2];
+	public static String evenOd(int... num) {
+		StringBuilder sb = new StringBuilder();
+		for(int i :num) {
+			if( i % 2 == 0) {
+			sb.append("Even ").append(i).append(" ");	
+			}else {
+				sb.append("Odd ").append(i).append(" ");
+			}
+		}
+		return sb.toString().trim() ;
+	}
+//	public static String evenOd(int... num) {
+//	    for (int i : num) {
+//	        return (i % 2 == 0 ? "Even " + i : "Odd " + i);
+//	    }
+//	    return ""; 
 //	}
 	
 	
@@ -52,8 +55,8 @@ public class Concat {
 	public static void main(String[] args) {
 		System.out.println(con("Sachin","Patel"));
 		System.out.println(max(25,65,4,2,5,92));
-		evenOdd(5,65,4,6,46,8,2,8,5,7);
-		//System.out.println(evenOd(5,6,7,2,8));
+		//evenOdd(5,65,4,6,46,8,2,8,5,7);
+		System.out.println(evenOd(2,6,7,2,8));
 	}
 
 }
