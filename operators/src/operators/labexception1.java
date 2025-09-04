@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class labexception1 {
 	public static void main(String[] args) {
+		
+//		1. Write a program that takes two numbers as input and performs division.
+//		Handle the case when the denominator is zero.
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("******Welcome*******");
 		System.out.println("Please Enter Numerator :");
